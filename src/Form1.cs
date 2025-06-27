@@ -44,7 +44,7 @@ namespace lwssp
         public void refreshInfo()
         {
             int pos = subSelect + pageSelect * 64;
-            string line1 = $"Œª÷√$" + pos.ToString("X8") + $"\n";
+            string line1 = $"‰ΩçÁΩÆ$" + pos.ToString("X8") + $"\n";
             label8.Text = line1;
         }
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
@@ -109,7 +109,7 @@ namespace lwssp
                 {
                     if (_path.Count <= 1)
                     {
-                        MessageBox.Show($"÷¡…Ÿ¡Ωµ„»∑∂®“ªÃıœﬂ£°");
+                        MessageBox.Show($"Ëá≥Â∞ë‰∏§ÁÇπÁ°ÆÂÆö‰∏ÄÊù°Á∫øÔºÅ");
                     }
                     else
                     {
@@ -224,12 +224,12 @@ namespace lwssp
             {
                 case (int)ProcessModeNum.processModeNone:
                     {
-                        label3.Text = $"æÕ–˜°£";
+                        label3.Text = $"Â∞±Áª™„ÄÇ";
                         break;
                     }
                 case (int)ProcessModeNum.processModeInputLines:
                     {
-                        label3.Text = $"ÃÌº”“ª∏ˆœﬂ∂Œ£¨”“º¸Ω· ¯°£";
+                        label3.Text = $"Ê∑ªÂä†‰∏Ä‰∏™Á∫øÊÆµÔºåÂè≥ÈîÆÁªìÊùü„ÄÇ";
                         break;
                     }
             }
@@ -252,16 +252,16 @@ namespace lwssp
                 {
                     if (points.Count == 3)
                     {
-                        listBox1.Items.Add("œﬂ∂Œ");
+                        listBox1.Items.Add("Á∫øÊÆµ");
                     }
                     if (points.Count >= 4)
                     {
-                        listBox1.Items.Add("∂‡∂Œœﬂ");
+                        listBox1.Items.Add("Â§öÊÆµÁ∫ø");
                     }
                     points.Clear();
                 }
             }
-            listBox1.Items.Add("ƒ©Œ≤");
+            listBox1.Items.Add("Êú´Â∞æ");
             listBox1.SelectedIndex = lnIndex;
             listBox2.SelectedIndex = ptIndex;
         }
@@ -281,7 +281,7 @@ namespace lwssp
             Paint_redraw();
             if (listBox1.SelectedIndex == -1)
             {
-                MessageBox.Show($"Œ¥—°÷–Œª÷√£°");
+                MessageBox.Show($"Êú™ÈÄâ‰∏≠‰ΩçÁΩÆÔºÅ");
                 ptIndex = 0;
                 return;
             }
